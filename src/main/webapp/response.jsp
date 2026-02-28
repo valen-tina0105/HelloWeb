@@ -20,10 +20,10 @@
         <jsp:setProperty name="mybean" property="age"/>
         <h1>
             <c:choose>
-                <c:when test = "${clock.hours < 12 && hora > 0}">
+                <c:when test = "${clock.hours < 12 && clock.hours > 0}">
                     Buenos Dias
                 </c:when>
-                <c:when test = "${clock.hours > 12 && hora < 18}">
+                <c:when test = "${clock.hours > 12 && clock.hours < 18}">
                     Buenas Tardes
                 </c:when>
                 <c:otherwise>
